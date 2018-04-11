@@ -2,7 +2,7 @@
 pipeline: 
   test_app: 
     commands: 
-      - "npm ci"
+      - "npm i"
       - "npm test"
     image: "node:carbon"
   publish_to_quay:
