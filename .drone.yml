@@ -1,4 +1,7 @@
 ---
+cache:
+  mount:
+    - node_modules
 pipeline:
   test_app:
     image: node:carbon
