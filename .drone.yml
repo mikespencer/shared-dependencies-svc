@@ -2,6 +2,16 @@
 pipeline: 
   test_app: 
     commands: 
-      - "npm i"
+      - "npm ci"
       - "npm test"
     image: "node:carbon"
+  publish_to_quay:
+    image: plugins/docker
+    username: mspencer+drone
+    secrets: [ docker_password ]
+    repo: quay.squarespace.net/mspencer/shared-dependencies-svc
+    registry: quay.squarespace.net
+    tags:
+      - ${DRONE_COMMIT_BRANCH/\//-}-${DRONE_BUILD_NUMBER}
+    when:
+      branch: master
