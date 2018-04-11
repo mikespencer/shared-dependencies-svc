@@ -1,0 +1,17 @@
+{
+  "name": "shared-dependencies-svc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start:prod": "node app",
+    "start": "nodemon app"
+  },
+  "dependencies": {
+    "express": "~4.16.0",
+    "mongodb": "^3.0.6",
+    "morgan": "~1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}
