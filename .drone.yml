@@ -1,11 +1,10 @@
----
-pipeline:
-  test_app:
-    image: node:carbon
-    commands:
-      - npm i
-      - npm test
-
-cache:
-  mount:
+--- 
+cache: 
+  mount: 
     - node_modules
+pipeline: 
+  test_app: 
+    commands: 
+      - "npm i"
+      - "npm test"
+    image: "node:carbon"
