@@ -1,7 +1,4 @@
 --- 
-cache: 
-  mount: 
-    - node_modules
 pipeline: 
   test_app: 
     commands: 
