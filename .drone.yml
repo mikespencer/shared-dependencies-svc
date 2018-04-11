@@ -1,7 +1,7 @@
 ---
 cache:
   mount:
-    - node_modules
+    - ./node_modules
 
 pipeline:
   test_app:
