@@ -1,10 +1,10 @@
 --- 
 pipeline: 
   test_app: 
+    image: "node:carbon"
     commands: 
       - "npm i"
       - "npm test"
-    image: "node:carbon"
   publish_to_quay:
     image: plugins/docker
     username: mspencer+drone

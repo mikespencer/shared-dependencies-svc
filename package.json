@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"No tests :(\"",
-    "start:prod": "node app",
+    "start:prod": "NODE_ENV=production node app",
     "start": "nodemon app"
   },
   "dependencies": {
