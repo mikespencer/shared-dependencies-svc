@@ -1,4 +1,3 @@
 build:
   docker:
-    test: Dockerfile.test
     web: Dockerfile
