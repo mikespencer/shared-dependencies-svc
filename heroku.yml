@@ -1,3 +1,5 @@
 build:
+  test:
+    web: npm test
   docker:
     web: Dockerfile
