@@ -6,4 +6,4 @@ COPY . /app
 
 RUN npm install --production
 
-CMD PORT=$PORT npm run start:prod
+CMD MONGO_URL=$MONGO_URL PORT=$PORT npm run start:prod
