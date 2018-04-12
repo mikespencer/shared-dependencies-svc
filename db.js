@@ -4,9 +4,9 @@ const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017';
 
 const dbConnect = (url = MONGODB_URI) =>
   new Promise((resolve, reject) => {
-    MongoClient.connect(url, (err, client) => {
+    MongoClient.connect(url, (err, db) => {
       if (err) reject(err);
-      resolve(client.db('shared-dependencies'));
+      resolve(db);
     });
   });
 
