@@ -1,5 +1,4 @@
-run:
-  web: npm test
 build:
   docker:
+    test: Dockerfile.test
     web: Dockerfile
