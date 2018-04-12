@@ -1,8 +1,8 @@
 const MongoClient = require('mongodb').MongoClient;
 
-const MONGO_URL = process.env.MONGO_URL || 'mongodb://127.0.0.1:27017';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017';
 
-const dbConnect = (url = MONGO_URL) =>
+const dbConnect = (url = MONGODB_URI) =>
   new Promise((resolve, reject) => {
     MongoClient.connect(url, (err, client) => {
       if (err) reject(err);
