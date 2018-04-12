@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "test": "echo \"No tests :(\"",
-    "start:prod": "NODE_ENV=production node app",
-    "start": "nodemon app"
+    "test": "jest",
+    "start:prod": "NODE_ENV=production node src/app",
+    "start": "nodemon src/app"
   },
   "dependencies": {
     "express": "~4.16.0",
@@ -14,6 +14,10 @@
     "morgan": "~1.9.0"
   },
   "devDependencies": {
+    "coveralls": "^3.0.0",
+    "jest": "^22.4.3",
+    "jest-environment-node": "^22.4.3",
+    "mongodb-memory-server": "^1.7.3",
     "nodemon": "^1.17.3"
   }
 }

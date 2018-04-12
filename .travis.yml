@@ -5,3 +5,10 @@ node_js:
 cache:
   directories:
     - "node_modules"
+script:
+  - "npm test -- -i --ci --coverage"
+after_script:
+  - "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+branches:
+  only:
+    master
